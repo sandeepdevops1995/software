@@ -16,7 +16,7 @@ pipeline {
                       sh 'cp -r /home/ubuntu/.jenkins/workspace/endtoend/webapp/target/webapp.war /home/ubuntu/.jenkins/workspace/endtoend'
                   }
              }
-             stage("design and build the dockerfile"){
+             stage("design and build dockerfile"){
                  steps {
                      sh 'ls -la'
                      sh 'docker build -t myimage .'
